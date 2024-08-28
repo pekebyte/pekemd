@@ -1,0 +1,20 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "pekebyte/pekemd",
+	"version": "0.1.0",
+	"title": "Markdown (PekeMD)",
+	"category": "widgets",
+	"description": "Markdown Editor for Gutenberg",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "pekemd",
+	"editorScript": "file:./index.js",
+	"attributes": {
+		"content": {
+			"type": "string"
+		}
+	}
+}
