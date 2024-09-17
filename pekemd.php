@@ -4,7 +4,7 @@
  * Description:       It enables you to write in Markdown format into the Gutenberg WP editor
  * Requires at least: 6.1
  * Requires PHP:      7.0
- * Version:           0.1.0
+ * Version:           0.2.0
  * Author:            Pekebyte
  * Author URI:		  https://pekebyte.com/
  * License:           GPL-2.0-or-later
@@ -25,7 +25,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function create_block_pekemd_block_init() {
+function pekemd_block_init() {
 	register_block_type( __DIR__ . '/build' );
 }
-add_action( 'init', 'create_block_pekemd_block_init' );
+add_action( 'init', 'pekemd_block_init' );
